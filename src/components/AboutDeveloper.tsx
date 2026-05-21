@@ -44,19 +44,19 @@ export default function AboutDeveloper() {
   const socialLinks = [
     {
       name: "GitHub",
-      href: "https://github.com",
+      href: "https://github.com/AmitSahoo-01",
       icon: <GithubIcon className="w-4 h-4" />,
       color: "hover:bg-zinc-800 hover:text-white border-zinc-800"
     },
     {
       name: "LinkedIn",
-      href: "https://linkedin.com",
+      href: "https://linkedin.com/in/amit-sahoo-407b6b356",
       icon: <LinkedinIcon className="w-4 h-4 text-[#0077b5]" />,
       color: "hover:bg-[#0077b5]/10 hover:text-[#0077b5] border-zinc-800 hover:border-[#0077b5]/30"
     },
     {
       name: "Portfolio",
-      href: "https://benny.dev",
+      href: "https://amitsahooportfolio.netlify.app",
       icon: <Globe className="w-4 h-4 text-purple-400" />,
       color: "hover:bg-purple-500/10 hover:text-purple-400 border-zinc-800 hover:border-purple-500/30"
     }
@@ -112,7 +112,7 @@ export default function AboutDeveloper() {
             </div>
 
             <h3 className="text-2xl sm:text-3xl font-extrabold text-white">
-              Hi, I&apos;m Benny
+              Hi, I&apos;m Amit
             </h3>
 
             <p className="text-zinc-300 text-base sm:text-lg leading-relaxed max-w-2xl">
@@ -169,7 +169,7 @@ export default function AboutDeveloper() {
               <div className="bg-zinc-900/80 px-4 py-3 border-b border-purple-500/10 flex items-center justify-between">
                 <div className="flex items-center gap-2">
                   <Terminal className="w-4 h-4 text-purple-400" />
-                  <span className="text-xs font-mono font-semibold text-zinc-400">benny-config.json</span>
+                  <span className="text-xs font-mono font-semibold text-zinc-400">developer-config.json</span>
                 </div>
                 {/* Control dots */}
                 <div className="flex gap-1.5">
@@ -183,10 +183,10 @@ export default function AboutDeveloper() {
               <div className="p-6 font-mono text-xs text-zinc-300 overflow-x-auto leading-relaxed whitespace-pre bg-zinc-950/70">
                 <div className="text-purple-400">{`{`}</div>
                 <div className="pl-4">
-                  <span className="text-indigo-400">&quot;developer&quot;</span>: <span className="text-emerald-400">&quot;Benny&quot;</span>,
+                  <span className="text-indigo-400">&quot;developer&quot;</span>: <span className="text-emerald-400">&quot;Amit&quot;</span>,
                 </div>
                 <div className="pl-4">
-                  <span className="text-indigo-400">&quot;role&quot;</span>: <span className="text-emerald-400">&quot;Automation & Tooling Specialist&quot;</span>,
+                  <span className="text-indigo-400">&quot;role&quot;</span>: <span className="text-emerald-400">&quot;Software Developer&quot;</span>,
                 </div>
                 <div className="pl-4">
                   <span className="text-indigo-400">&quot;philosophy&quot;</span>: <span className="text-amber-400">{`[`}</span>
@@ -199,11 +199,11 @@ export default function AboutDeveloper() {
                 <div className="pl-4 text-amber-400">{`]`},</div>
                 <div className="pl-4">
                   <span className="text-indigo-400">&quot;interests&quot;</span>: <span className="text-amber-400">{`[`}</span>
-                  <span className="text-emerald-400">&quot;W3C Standards&quot;</span>, <span className="text-emerald-400">&quot;Chromium MV3&quot;</span>
+                  <span className="text-emerald-400">&quot;Software Development&quot;</span>, <span className="text-emerald-400">&quot;Creative coding&quot;</span>
                   <span className="text-amber-400">{`]`}</span>,
                 </div>
                 <div className="pl-4">
-                  <span className="text-indigo-400">&quot;status&quot;</span>: <span className="text-emerald-400">&quot;Building Chrome utilities&quot;</span>
+                  <span className="text-indigo-400">&quot;status&quot;</span>: <span className="text-emerald-400">&quot;Student(Open to Work/internships/freelance)&quot;</span>
                 </div>
                 <div className="text-purple-400">{`}`}</div>
 

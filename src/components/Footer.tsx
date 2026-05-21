@@ -51,9 +51,9 @@ export default function Footer() {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="bg-zinc-950 border-t border-purple-500/10 py-16 relative overflow-hidden z-10">
+    <footer className="bg-zinc-950 border-t border-zinc-900 py-16 relative overflow-hidden z-10">
       {/* Subtle glow */}
-      <span className="absolute bottom-0 right-1/4 w-80 h-80 bg-purple-500/5 rounded-full blur-[100px] pointer-events-none" />
+      <span className="absolute bottom-0 right-1/4 w-80 h-80 bg-[#c4a46a]/2 rounded-full blur-[100px] pointer-events-none" />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-10 md:gap-8 mb-12">
@@ -61,12 +61,12 @@ export default function Footer() {
           {/* Logo & Description */}
           <div className="md:col-span-2 space-y-4">
             <a href="#home" className="flex items-center gap-2 group">
-              <div className="relative flex items-center justify-center w-8 h-8 rounded-lg bg-purple-500/10 border border-purple-500/25">
+              <div className="relative flex items-center justify-center w-8 h-8 rounded-lg bg-zinc-900 border border-zinc-800">
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img src="/favicon.ico" alt="Logo" className="w-4 h-4 object-contain" />
               </div>
               <span className="text-lg font-bold text-white tracking-wide">
-                DEV<span className="text-purple-500 font-extrabold">HUB</span>
+                DEV<span className="text-[#c4a46a] font-extrabold">HUB</span>
               </span>
             </a>
             <p className="text-zinc-400 text-sm max-w-sm leading-relaxed">
@@ -81,22 +81,22 @@ export default function Footer() {
             </h4>
             <ul className="space-y-2.5 text-sm">
               <li>
-                <a href="#home" className="text-zinc-400 hover:text-purple-400 transition-colors">
+                <a href="#home" className="text-zinc-400 hover:text-[#c4a46a] transition-colors">
                   Home
                 </a>
               </li>
               <li>
-                <a href="#extensions" className="text-zinc-400 hover:text-purple-400 transition-colors">
+                <a href="#extensions" className="text-zinc-400 hover:text-[#c4a46a] transition-colors">
                   Browse Extensions
                 </a>
               </li>
               <li>
-                <a href="#installation" className="text-zinc-400 hover:text-purple-400 transition-colors">
+                <a href="#installation" className="text-zinc-400 hover:text-[#c4a46a] transition-colors">
                   Installation Steps
                 </a>
               </li>
               <li>
-                <a href="#features" className="text-zinc-400 hover:text-purple-400 transition-colors">
+                <a href="#features" className="text-zinc-400 hover:text-[#c4a46a] transition-colors">
                   Key Features
                 </a>
               </li>
@@ -106,41 +106,41 @@ export default function Footer() {
           {/* Socials & Connect */}
           <div className="space-y-4">
             <h4 className="text-xs font-bold uppercase tracking-[0.15em] text-zinc-500">
-              Find Benny
+              Find Me
             </h4>
             <div className="flex gap-4">
               <a
-                href="https://github.com"
+                href="https://github.com/AmitSahoo-01"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-9 h-9 rounded-lg bg-zinc-900 border border-zinc-800 hover:border-purple-500/40 flex items-center justify-center text-zinc-400 hover:text-white transition-all duration-300"
+                className="w-9 h-9 rounded-lg bg-zinc-900 border border-zinc-800 hover:border-zinc-700 flex items-center justify-center text-zinc-400 hover:text-white transition-all duration-300"
                 aria-label="GitHub"
               >
                 <GithubIcon className="w-4 h-4" />
               </a>
               <a
-                href="https://linkedin.com"
+                href="https://linkedin.com/in/amit-sahoo-407b6b356"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-9 h-9 rounded-lg bg-zinc-900 border border-zinc-800 hover:border-purple-500/40 flex items-center justify-center text-zinc-400 hover:text-white transition-all duration-300"
+                className="w-9 h-9 rounded-lg bg-zinc-900 border border-zinc-800 hover:border-zinc-700 flex items-center justify-center text-zinc-400 hover:text-white transition-all duration-300"
                 aria-label="LinkedIn"
               >
                 <LinkedinIcon className="w-4 h-4" />
               </a>
               <a
-                href="https://twitter.com"
+                href="https://twitter.com/amitSahoo"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-9 h-9 rounded-lg bg-zinc-900 border border-zinc-800 hover:border-purple-500/40 flex items-center justify-center text-zinc-400 hover:text-white transition-all duration-300"
+                className="w-9 h-9 rounded-lg bg-zinc-900 border border-zinc-800 hover:border-zinc-700 flex items-center justify-center text-zinc-400 hover:text-white transition-all duration-300"
                 aria-label="Twitter"
               >
                 <TwitterIcon className="w-4 h-4" />
               </a>
               <a
-                href="https://benny.dev"
+                href="https://amitsahooportfolio.netlify.app"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-9 h-9 rounded-lg bg-zinc-900 border border-zinc-800 hover:border-purple-500/40 flex items-center justify-center text-zinc-400 hover:text-white transition-all duration-300"
+                className="w-9 h-9 rounded-lg bg-zinc-900 border border-zinc-800 hover:border-zinc-700 flex items-center justify-center text-zinc-400 hover:text-white transition-all duration-300"
                 aria-label="Portfolio"
               >
                 <Globe className="w-4 h-4" />
@@ -154,16 +154,16 @@ export default function Footer() {
         </div>
 
         {/* Divider */}
-        <div className="border-t border-purple-500/5 pt-8 flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-zinc-500">
+        <div className="border-t border-zinc-900/60 pt-8 flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-zinc-500">
           <div>
             &copy; {currentYear} DEVHUB. All rights reserved.
           </div>
           <div className="flex items-center gap-1.5">
             <span>Built with</span>
-            <Heart className="w-3 h-3 text-purple-500 fill-current" />
+            <Heart className="w-3 h-3 text-[#c4a46a] fill-current" />
             <span>by</span>
-            <a href="#developer" className="text-zinc-400 hover:text-purple-400 font-semibold transition-colors">
-              Benny
+            <a href="#developer" className="text-zinc-400 hover:text-[#c4a46a] font-semibold transition-colors">
+              Amit
             </a>
             <span>• Runs locally offline</span>
           </div>

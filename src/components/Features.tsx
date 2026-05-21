@@ -22,32 +22,32 @@ export default function Features() {
     {
       title: "Fast Installation",
       description: "Load unpacked files directly into Chrome. Get up and running in under a minute without waiting for Web Store reviews.",
-      icon: <Zap className="w-5 h-5 text-purple-400" />
+      icon: <Zap className="w-5 h-5 text-[#c4a46a]" />
     },
     {
       title: "No API Keys Required",
       description: "Forget monthly API subscription fees or secret keys. These utilities run natively with zero developer configuration.",
-      icon: <KeyRound className="w-5 h-5 text-pink-400" />
+      icon: <KeyRound className="w-5 h-5 text-[#c4a46a]" />
     },
     {
       title: "Privacy Focused",
       description: "All processing happens inside your sandbox browser. No tracking pixels, external telemetry, or data mining.",
-      icon: <ShieldCheck className="w-5 h-5 text-indigo-400" />
+      icon: <ShieldCheck className="w-5 h-5 text-[#c4a46a]" />
     },
     {
       title: "Works 100% Offline",
       description: "No internet connection? No problem. Full features remain available offline without talking to external cloud servers.",
-      icon: <WifiOff className="w-5 h-5 text-emerald-400" />
+      icon: <WifiOff className="w-5 h-5 text-[#c4a46a]" />
     },
     {
       title: "Lightweight Footprint",
       description: "Highly optimized JavaScript, HTML, and CSS. Zero background service worker bloat, keeping your Chrome running fast.",
-      icon: <Feather className="w-5 h-5 text-cyan-400" />
+      icon: <Feather className="w-5 h-5 text-[#c4a46a]" />
     },
     {
       title: "Open Source Code",
       description: "Transparency is our foundation. Inspect every line of code on GitHub, fork it, compile it yourself, or suggest changes.",
-      icon: <Code2 className="w-5 h-5 text-purple-400" />
+      icon: <Code2 className="w-5 h-5 text-[#c4a46a]" />
     }
   ];
 
@@ -82,7 +82,7 @@ export default function Features() {
             initial={{ opacity: 0, y: 10 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="text-xs font-bold uppercase tracking-[0.25em] text-purple-400 mb-3"
+            className="text-xs font-bold uppercase tracking-[0.25em] text-[#c4a46a] mb-3"
           >
             Capabilities
           </motion.div>
@@ -118,15 +118,15 @@ export default function Features() {
             <motion.div
               key={idx}
               variants={itemVariants}
-              className="glass-card rounded-2xl p-6 md:p-8 flex flex-col items-start hover:border-purple-500/20 hover:bg-[#18122B]/20 transition-all duration-300 group"
+              className="glass-card rounded-2xl p-6 md:p-8 flex flex-col items-start hover:border-zinc-700 hover:bg-zinc-900/10 transition-all duration-300 group"
             >
               {/* Feature Icon */}
-              <div className="w-10 h-10 rounded-xl bg-zinc-900 border border-purple-500/10 flex items-center justify-center mb-6 group-hover:scale-110 group-hover:border-purple-500/40 transition-all duration-300">
+              <div className="w-10 h-10 rounded-xl bg-zinc-900 border border-zinc-800 flex items-center justify-center mb-6 group-hover:scale-110 group-hover:border-[#c4a46a]/20 transition-all duration-300">
                 {feature.icon}
               </div>
 
               {/* Title */}
-              <h3 className="text-lg font-bold text-white mb-3 group-hover:text-purple-300 transition-colors">
+              <h3 className="text-lg font-bold text-white mb-3 group-hover:text-[#c4a46a] transition-colors">
                 {feature.title}
               </h3>
 

@@ -24,8 +24,8 @@ export default function Hero() {
       <div className="absolute inset-0 z-5 bg-gradient-to-r from-[#09090b]/90 via-[#09090b]/40 to-transparent pointer-events-none" />
 
       {/* Floating Glow Orbs */}
-      <div className="absolute top-1/4 left-1/3 w-[30vw] h-[30vw] rounded-full bg-purple-600/20 blur-[120px] animate-glow-pulse pointer-events-none z-5" />
-      <div className="absolute bottom-1/4 right-1/4 w-[25vw] h-[25vw] rounded-full bg-indigo-600/15 blur-[100px] animate-glow-pulse pointer-events-none z-5" style={{ animationDelay: "-3s" }} />
+      <div className="absolute top-1/4 left-1/3 w-[30vw] h-[30vw] rounded-full bg-[#c4a46a]/3 blur-[120px] animate-glow-pulse pointer-events-none z-5" />
+      <div className="absolute bottom-1/4 right-1/4 w-[25vw] h-[25vw] rounded-full bg-zinc-800/10 blur-[100px] animate-glow-pulse pointer-events-none z-5" style={{ animationDelay: "-3s" }} />
 
       {/* Huge Vertical "DEVHUB" text inspired by reference image */}
       <div className="absolute right-4 sm:right-10 md:right-16 lg:right-24 top-1/2 -translate-y-1/2 z-10 flex flex-row-reverse items-center justify-center gap-4 sm:gap-6 md:gap-8 select-none pointer-events-none">
@@ -48,7 +48,7 @@ export default function Hero() {
           initial={{ opacity: 0 }}
           animate={{ opacity: 0.4 }}
           transition={{ duration: 1.5, delay: 0.8 }}
-          className="text-[0.7vh] sm:text-[0.85vh] md:text-[1vh] font-medium tracking-[0.4em] text-purple-200 uppercase select-none whitespace-nowrap"
+          className="text-[0.7vh] sm:text-[0.85vh] md:text-[1vh] font-medium tracking-[0.4em] text-zinc-400 uppercase select-none whitespace-nowrap"
           style={{
             writingMode: "vertical-rl",
             transform: "rotate(180deg)",
@@ -66,7 +66,7 @@ export default function Hero() {
             initial={{ opacity: 0, scale: 0.9 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.5 }}
-            className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-purple-500/10 border border-purple-500/20 text-purple-300 text-xs font-semibold mb-6 shadow-[0_0_15px_rgba(168,85,247,0.1)]"
+            className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-zinc-900 border border-zinc-800 text-[#c4a46a] text-xs font-semibold mb-6 shadow-md"
           >
             <Terminal className="w-3.5 h-3.5" />
             <span>Introducing DEVHUB V1.0</span>
@@ -79,9 +79,9 @@ export default function Hero() {
             transition={{ duration: 0.6, delay: 0.1 }}
             className="text-4xl sm:text-5xl md:text-6xl font-extrabold tracking-tight text-white mb-6 font-sans"
           >
-            Amit Extensions{" "}
-            <span className="block mt-2 bg-gradient-to-r from-purple-400 via-pink-400 to-indigo-400 bg-clip-text text-transparent drop-shadow-sm">
-              Hub
+            Ship Your Work{" "}
+            <span className="block mt-2 bg-gradient-to-r from-zinc-100 to-[#c4a46a] bg-clip-text text-transparent drop-shadow-sm">
+              Faster
             </span>
           </motion.h1>
 
@@ -105,19 +105,19 @@ export default function Hero() {
             {/* Download Button */}
             <a
               href="#extensions"
-              className="relative px-8 py-4 rounded-2xl bg-gradient-to-r from-purple-600 to-indigo-600 hover:from-purple-500 hover:to-indigo-500 text-white font-bold transition-all duration-300 shadow-[0_0_30px_rgba(168,85,247,0.4)] hover:shadow-[0_0_40px_rgba(168,85,247,0.6)] hover:-translate-y-0.5 group overflow-hidden"
+              className="relative px-8 py-4 rounded-2xl bg-zinc-950 border border-zinc-800 text-zinc-100 hover:text-black font-bold transition-all duration-350 shadow-md hover:-translate-y-0.5 group overflow-hidden"
             >
               <span className="relative z-10 flex items-center gap-2">
                 Download Extensions
                 <ArrowDown className="w-5 h-5 group-hover:translate-y-1 transition-transform" />
               </span>
-              <div className="absolute inset-0 -translate-x-full group-hover:translate-x-0 bg-gradient-to-r from-indigo-600 to-purple-600 transition-transform duration-500 -z-0" />
+              <div className="absolute inset-0 -translate-x-full group-hover:translate-x-0 bg-zinc-100 transition-transform duration-300 -z-0" />
             </a>
 
             {/* View Projects Button */}
             <a
               href="#developer"
-              className="px-8 py-4 rounded-2xl bg-zinc-900/50 hover:bg-zinc-800/80 text-zinc-200 hover:text-white font-bold transition-all duration-300 border border-zinc-800 hover:border-purple-500/40 backdrop-blur-sm"
+              className="px-8 py-4 rounded-2xl bg-zinc-900/50 hover:bg-zinc-800/80 text-zinc-200 hover:text-white font-bold transition-all duration-300 border border-zinc-800 hover:border-zinc-700 backdrop-blur-sm"
             >
               View Projects
             </a>
@@ -135,7 +135,7 @@ export default function Hero() {
           transition={{ repeat: Infinity, duration: 1.5 }}
           className="w-5 h-8 rounded-full border-2 border-zinc-600 flex items-start justify-center p-1"
         >
-          <div className="w-1 h-2 bg-purple-500 rounded-full" />
+          <div className="w-1 h-2 bg-[#c4a46a] rounded-full" />
         </motion.div>
       </div>
     </section>

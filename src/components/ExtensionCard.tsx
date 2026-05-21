@@ -42,32 +42,21 @@ export default function ExtensionCard({ extension }: ExtensionCardProps) {
   const getIcon = (name: string) => {
     switch (name) {
       case "FileSpreadsheet":
-        return <FileSpreadsheet className="w-6 h-6 text-purple-400" />;
+        return <FileSpreadsheet className="w-6 h-6 text-[#c4a46a]" />;
       case "Subtitles":
-        return <Subtitles className="w-6 h-6 text-pink-400" />;
+        return <Subtitles className="w-6 h-6 text-[#c4a46a]" />;
       case "Briefcase":
-        return <Briefcase className="w-6 h-6 text-indigo-400" />;
+        return <Briefcase className="w-6 h-6 text-[#c4a46a]" />;
       case "LayoutGrid":
-        return <LayoutGrid className="w-6 h-6 text-emerald-400" />;
+        return <LayoutGrid className="w-6 h-6 text-[#c4a46a]" />;
       default:
-        return <LayoutGrid className="w-6 h-6 text-purple-400" />;
+        return <LayoutGrid className="w-6 h-6 text-[#c4a46a]" />;
     }
   };
 
   // Get background color class for the icon wrapper based on extension type
   const getIconBg = (name: string) => {
-    switch (name) {
-      case "FileSpreadsheet":
-        return "bg-purple-500/10 border-purple-500/20";
-      case "Subtitles":
-        return "bg-pink-500/10 border-pink-500/20";
-      case "Briefcase":
-        return "bg-indigo-500/10 border-indigo-500/20";
-      case "LayoutGrid":
-        return "bg-emerald-500/10 border-emerald-500/20";
-      default:
-        return "bg-purple-500/10 border-purple-500/20";
-    }
+    return "bg-zinc-900 border-zinc-800";
   };
 
   const handleDownload = () => {
@@ -86,7 +75,7 @@ export default function ExtensionCard({ extension }: ExtensionCardProps) {
       className="glass-card glass-card-hover rounded-3xl p-6 md:p-8 flex flex-col justify-between h-full relative overflow-hidden group"
     >
       {/* Decorative background glow */}
-      <span className="absolute -top-10 -right-10 w-24 h-24 bg-purple-500/10 rounded-full blur-2xl group-hover:bg-purple-500/20 transition-all duration-500" />
+      <span className="absolute -top-10 -right-10 w-24 h-24 bg-[#c4a46a]/2 rounded-full blur-2xl group-hover:bg-[#c4a46a]/5 transition-all duration-500" />
 
       <div>
         {/* Header (Logo + Title + Info) */}
@@ -95,7 +84,7 @@ export default function ExtensionCard({ extension }: ExtensionCardProps) {
             {getIcon(extension.iconName)}
           </div>
           <div>
-            <h3 className="text-xl font-bold text-white group-hover:text-purple-300 transition-colors">
+            <h3 className="text-xl font-bold text-white group-hover:text-[#c4a46a] transition-colors">
               {extension.name}
             </h3>
             <div className="flex items-center gap-3 mt-1.5 text-xs text-zinc-400">
@@ -127,7 +116,7 @@ export default function ExtensionCard({ extension }: ExtensionCardProps) {
       </div>
 
       {/* Action Buttons */}
-      <div className="flex flex-col sm:flex-row gap-3 mt-auto pt-4 border-t border-purple-500/10">
+      <div className="flex flex-col sm:flex-row gap-3 mt-auto pt-4 border-t border-zinc-900">
         {/* Download Button */}
         <a
           href={extension.downloadUrl}
@@ -136,7 +125,7 @@ export default function ExtensionCard({ extension }: ExtensionCardProps) {
           className={`flex-1 flex items-center justify-center gap-2 py-3 px-4 rounded-xl text-xs font-bold transition-all duration-300 border ${
             downloaded
               ? "bg-emerald-500/20 border-emerald-500/40 text-emerald-300"
-              : "bg-purple-600/10 border-purple-500/30 hover:bg-purple-600 hover:border-purple-500 text-white hover:shadow-[0_0_15px_rgba(168,85,247,0.3)]"
+              : "bg-zinc-950 border-zinc-850 hover:bg-zinc-100 hover:text-black hover:border-white text-zinc-100 shadow-sm"
           }`}
         >
           {downloaded ? (
@@ -155,9 +144,9 @@ export default function ExtensionCard({ extension }: ExtensionCardProps) {
         {/* Add to Chrome Button (Scrolling down to manual installation step guide) */}
         <a
           href="#installation"
-          className="flex-1 flex items-center justify-center gap-2 py-3 px-4 rounded-xl text-xs font-bold bg-zinc-900 hover:bg-zinc-800 text-zinc-300 hover:text-white border border-zinc-800 hover:border-zinc-700 transition-all duration-300"
+          className="flex-1 flex items-center justify-center gap-2 py-3 px-4 rounded-xl text-xs font-bold bg-zinc-900 hover:bg-zinc-800 text-zinc-350 hover:text-white border border-zinc-800 hover:border-zinc-700 transition-all duration-300"
         >
-          <ChromeIcon className="w-4 h-4 text-purple-400" />
+          <ChromeIcon className="w-4 h-4 text-zinc-400 group-hover:text-white transition-colors" />
           <span>Add to Chrome</span>
         </a>
       </div>
