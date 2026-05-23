@@ -50,7 +50,7 @@ export default function Navbar() {
                 <span className="absolute inset-0 rounded-xl bg-zinc-100/5 blur-sm scale-75 group-hover:scale-110 transition-all duration-300" />
               </div>
               <span className="text-xl font-bold bg-gradient-to-r from-white via-zinc-200 to-zinc-400 bg-clip-text text-transparent tracking-wide font-sans">
-                DEV<span className="text-[#57595B] font-extrabold">HUB</span>
+                DEV<span className="text-[#c4a46a] font-extrabold">HUB</span>
               </span>
             </a>
 
@@ -75,7 +75,7 @@ export default function Navbar() {
               >
                 <div className="absolute inset-0 bg-zinc-100 opacity-0 group-hover:opacity-100 transition-opacity duration-300 -z-10" />
                 <div className="absolute inset-0 bg-zinc-900/60 opacity-100 -z-20" />
-                <Terminal className="w-3.5 h-3.5 text-[#57595B] group-hover:text-black transition-colors" />
+                <Terminal className="w-3.5 h-3.5 text-[#c4a46a] group-hover:text-black transition-colors" />
                 <span>Contact Me</span>
                 {/* Glow ring */}
                 <div className="absolute -inset-px rounded-xl bg-zinc-200 opacity-0 group-hover:opacity-20 blur-sm transition-opacity duration-300 -z-30" />

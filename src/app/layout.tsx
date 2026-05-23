@@ -14,20 +14,33 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "DEVHUB | Benny Chrome Extensions Hub",
-  description: "Discover and download powerful browser extensions, productivity utilities, and UI tools built for automation and privacy. Designed and developed by Benny.",
-  keywords: ["Chrome Extensions", "Browser Extensions", "Smart Auto Filler", "Subtitle Generator", "AI Resume Builder", "Benny UI Components", "Developer Portfolio", "Automation Tools", "Privacy First Extensions"],
+  description:
+    "Discover and download powerful browser extensions, productivity utilities, and UI tools built for automation and privacy. Designed and developed by Benny.",
+  keywords: [
+    "Chrome Extensions",
+    "Browser Extensions",
+    "Smart Auto Filler",
+    "Subtitle Generator",
+    "AI Resume Builder",
+    "Benny UI Components",
+    "Developer Portfolio",
+    "Automation Tools",
+    "Privacy First Extensions",
+  ],
   authors: [{ name: "Benny" }],
   openGraph: {
     title: "DEVHUB | Benny Chrome Extensions Hub",
-    description: "Discover and download powerful browser extensions and tools designed by Benny.",
+    description:
+      "Discover and download powerful browser extensions and tools designed by Benny.",
     type: "website",
     locale: "en_US",
   },
   twitter: {
     card: "summary_large_image",
-    title: "DEVHUB | Benny Chrome Extensions Hub",
-    description: "Discover and download powerful browser extensions and tools designed by Benny.",
-  }
+    title: "DEVHUB | Chrome Extensions Hub",
+    description:
+      "Discover and download powerful browser extensions and tools designed by Benny.",
+  },
 };
 
 export default function RootLayout({
@@ -40,9 +53,7 @@ export default function RootLayout({
       lang="en"
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased scroll-smooth`}
     >
-      <body className="min-h-full flex flex-col bg-[#09090b] text-[#fafafa] selection:bg-purple-500/30 selection:text-white">
-        {children}
-      </body>
+      <body className="min-h-full flex flex-col">{children}</body>
     </html>
   );
 }

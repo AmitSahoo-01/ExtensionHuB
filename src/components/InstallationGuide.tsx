@@ -123,7 +123,7 @@ export default function InstallationGuide() {
           className="relative grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-10"
         >
           {/* Connector Line for visual flow (Only visible on large screens) */}
-          <div className="hidden lg:block absolute top-[90px] left-[5%] right-[5%] h-[2px] bg-zinc-800/40 -z-10" />
+          <div className="hidden lg:block absolute top-[90px] left-[5%] right-[5%] h-[2px] opacity-0 -z-10" />
 
           {steps.map((step, idx) => (
             <motion.div
@@ -131,10 +131,6 @@ export default function InstallationGuide() {
               variants={itemVariants}
               className="glass-card rounded-3xl p-8 relative flex flex-col justify-between group overflow-hidden border border-zinc-800/40 hover:border-zinc-700 transition-all duration-300 shadow-md"
             >
-              {/* Giant background step number */}
-              <div className="absolute right-6 top-4 font-mono font-black text-6xl text-zinc-800/10 group-hover:text-[#c4a46a]/5 transition-colors pointer-events-none select-none">
-                {step.number}
-              </div>
 
               <div>
                 {/* Step Icon & Number */}

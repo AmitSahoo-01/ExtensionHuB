@@ -110,7 +110,7 @@ export default function Footer() {
             </h4>
             <div className="flex gap-4">
               <a
-                href="https://github.com/AmitSahoo-01"
+                href="https://github.com"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-9 h-9 rounded-lg bg-zinc-900 border border-zinc-800 hover:border-zinc-700 flex items-center justify-center text-zinc-400 hover:text-white transition-all duration-300"
@@ -119,7 +119,7 @@ export default function Footer() {
                 <GithubIcon className="w-4 h-4" />
               </a>
               <a
-                href="https://linkedin.com/in/amit-sahoo-407b6b356"
+                href="https://linkedin.com"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-9 h-9 rounded-lg bg-zinc-900 border border-zinc-800 hover:border-zinc-700 flex items-center justify-center text-zinc-400 hover:text-white transition-all duration-300"
@@ -128,7 +128,7 @@ export default function Footer() {
                 <LinkedinIcon className="w-4 h-4" />
               </a>
               <a
-                href="https://twitter.com/amitSahoo"
+                href="https://twitter.com"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-9 h-9 rounded-lg bg-zinc-900 border border-zinc-800 hover:border-zinc-700 flex items-center justify-center text-zinc-400 hover:text-white transition-all duration-300"
@@ -137,7 +137,7 @@ export default function Footer() {
                 <TwitterIcon className="w-4 h-4" />
               </a>
               <a
-                href="https://amitsahooportfolio.netlify.app"
+                href="https://benny.dev"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-9 h-9 rounded-lg bg-zinc-900 border border-zinc-800 hover:border-zinc-700 flex items-center justify-center text-zinc-400 hover:text-white transition-all duration-300"
@@ -163,7 +163,7 @@ export default function Footer() {
             <Heart className="w-3 h-3 text-[#c4a46a] fill-current" />
             <span>by</span>
             <a href="#developer" className="text-zinc-400 hover:text-[#c4a46a] font-semibold transition-colors">
-              Amit
+              Benny
             </a>
             <span>• Runs locally offline</span>
           </div>
