@@ -186,7 +186,7 @@ export default function AboutDeveloper() {
                   <span className="text-indigo-400">&quot;developer&quot;</span>: <span className="text-emerald-400">&quot;Amit&quot;</span>,
                 </div>
                 <div className="pl-4">
-                  <span className="text-indigo-400">&quot;role&quot;</span>: <span className="text-emerald-400">&quot;Software Developer&quot;</span>,
+                  <span className="text-indigo-400">&quot;role&quot;</span>: <span className="text-emerald-400">&quot;Full-Stack Developer&quot;</span>,
                 </div>
                 <div className="pl-4">
                   <span className="text-indigo-400">&quot;philosophy&quot;</span>: <span className="text-amber-400">{`[`}</span>
